@@ -4,7 +4,7 @@ interface Props {
 
 function Item({ children }: Props) {
   return (
-    <li className="uppercase font-bold text-gray-medium cursor-pointer hover:text-gray-dark">
+    <li className="uppercase font-bold cursor-pointer hover:text-gray-dark">
       {children}
     </li>
   );
