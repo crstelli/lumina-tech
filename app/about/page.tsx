@@ -37,7 +37,7 @@ export default function page() {
             </p>
           </div>
         </div>
-        <p className="mt-30 text-xl italic border grid grid-cols-[auto_1fr] gap-x-2 text-gray-700 py-4 px-8 border-orange-200 shadow-md rounded-t-xl rounded-l-xl">
+        <p className="mt-30 text-xl italic grid grid-cols-[auto_1fr] gap-x-2 text-gray-700 py-4 px-8 shadow-sm rounded-t-xl rounded-l-xl">
           <Quote size={30} className="text-primary-500" strokeWidth={2} />
           <span className="row-2 col-2">
             Da soli possiamo fare così <strong>poco</strong>;
@@ -67,7 +67,7 @@ export default function page() {
             </div>
             <div className="p-4 grid grid-cols-2 items-center gap-y-2">
               <h4 className="font-bold text-2xl col-span-2">Josh Armen</h4>
-              <span className="text-gray-500 text-xl">CEO</span>
+              <span className="text-gray-500 text-lg">CEO</span>
               <span className="justify-self-end text-gray-500">
                 - Since 2019
               </span>
@@ -84,7 +84,7 @@ export default function page() {
             </div>
             <div className="p-4 grid grid-cols-2 items-center gap-y-2">
               <h4 className="font-bold text-2xl col-span-2">Lucy Keller</h4>
-              <span className="text-gray-500 text-xl">Architect</span>
+              <span className="text-gray-500 text-lg">Architect</span>
               <span className="justify-self-end text-gray-500">
                 - Since 2021
               </span>
@@ -101,7 +101,7 @@ export default function page() {
             </div>
             <div className="p-4 grid grid-cols-2 items-center gap-y-2">
               <h4 className="font-bold text-2xl col-span-2">Carl Monternat</h4>
-              <span className="text-gray-500 text-xl">Manager</span>
+              <span className="text-gray-500 text-lg">Manager</span>
               <span className="justify-self-end text-gray-500">
                 - Since 2020
               </span>

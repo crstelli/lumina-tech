@@ -1,3 +1,4 @@
+import { Button } from "@/components/Button";
 import { Navbar } from "@/components/navbar/Navbar";
 import { Statistics } from "@/components/statistics/Statistics";
 
@@ -9,7 +10,7 @@ export default function page() {
     <>
       <Navbar active="Home" />
       <main className="flex flex-col gap-20 mt-15 bg-radial from-primary-500 to-60% to-white">
-        <h1 className="text-center text-7xl text-black font-bold mt-20">
+        <h1 className="text-center text-7xl text-gray-900 font-bold mt-20">
           Illuminiamo il futuro,
           <br />
           <span className="text-primary-500">Oggi</span>
@@ -17,11 +18,8 @@ export default function page() {
         <div className="relative w-[500px] aspect-square m-auto">
           <Image src="/hero.png" fill alt="Image of a light bulb" />
         </div>
-        <Link
-          href="/services"
-          className="bg-primary-500 mx-auto rounded-md text-center text-2xl px-10 py-4 cursor-pointer font-bold uppercase"
-        >
-          Vedi i nostri Servizi &rarr;
+        <Link href="/services" className="mx-auto">
+          <Button size="lg">Vedi i nostri Servizi &rarr;</Button>
         </Link>
       </main>
       <div className="flex flex-col gap-20">
@@ -29,9 +27,9 @@ export default function page() {
         <Statistics />
         <Link
           href="/services"
-          className="bg-primary-500 mx-auto rounded-md shadow-2xl text-center text-xl px-10 py-4 mt-20 cursor-pointer font-bold uppercase"
+          className="mx-auto shadow-xl/50 shadow-primary-500 mt-20 cursor-pointer"
         >
-          Richiedi un preventivo &rarr;
+          <Button>Richiedi un preventivo &rarr;</Button>
         </Link>
       </div>
     </>
