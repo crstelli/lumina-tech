@@ -8,7 +8,7 @@ interface Props {
 
 function Card({ children, label, icon: Icon }: Props) {
   return (
-    <div className="flex flex-col items-center text-center shadow-2xl py-6 border border-gray-300 rounded-lg px-6">
+    <div className="flex flex-col items-center text-center shadow-lg py-6 border border-gray-200 rounded-lg px-6">
       <span className="bg-orange-100 p-4 rounded-full text-primary-500">
         <Icon size={40} />
       </span>
