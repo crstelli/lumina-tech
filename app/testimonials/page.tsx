@@ -1,8 +1,10 @@
+import { Button } from "@/components/Button";
 import { Carousel } from "@/components/Carousel";
 import { Navbar } from "@/components/navbar/Navbar";
 import { Container } from "@/components/section/Container";
 import { Paragraph } from "@/components/section/Paragraph";
 import { Title } from "@/components/section/Title";
+import Link from "next/link";
 
 export default function page() {
   return (
@@ -19,6 +21,9 @@ export default function page() {
         </Paragraph>
 
         <Carousel />
+        <Link className="mt-30" href="/contact">
+          <Button>Diventa un nostro cliente &rarr;</Button>
+        </Link>
       </Container>
     </>
   );
