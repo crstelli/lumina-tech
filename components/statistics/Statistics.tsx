@@ -3,7 +3,7 @@ import { Map, User, Zap } from "lucide-react";
 
 function Statistics() {
   return (
-    <div className="grid grid-cols-3 w-[1000px] gap-30 mx-auto justify-between">
+    <div className="grid grid-cols-1 max-w-[350px] lg:grid-cols-3 lg:max-w-[1000px] w-[90%] gap-15 lg:gap-6 mx-auto justify-between">
       <Card icon={Map} label="tra aziende e privati, negli ultimi 3 anni">
         Oltre 120 progetti completati
       </Card>

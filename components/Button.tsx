@@ -25,7 +25,7 @@ function Button({
   const sizes = {
     sm: "px-2 py-1",
     md: "px-6 py-2 text-lg",
-    lg: "px-10 py-4 text-2xl",
+    lg: "px-4 md:px-10 py-2 md:py-4 text-lg md:text-2xl",
   };
 
   return (
