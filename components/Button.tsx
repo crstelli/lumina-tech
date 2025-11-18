@@ -3,6 +3,7 @@ interface Props {
   onClick?: () => void;
   variant?: "primary" | "secondary";
   size?: "sm" | "md" | "lg";
+  type?: "button" | "submit";
   className?: React.ComponentProps<"div">["className"];
 }
 
@@ -11,6 +12,7 @@ function Button({
   onClick,
   variant = "primary",
   size = "md",
+  type = "button",
   className,
 }: Props) {
   const baseClasses = "rounded-md cursor-pointer font-bold uppercase";
@@ -28,6 +30,7 @@ function Button({
 
   return (
     <button
+      type={type}
       onClick={onClick}
       className={`${baseClasses} ${variants[variant]} ${sizes[size]} ${className}`}
     >
