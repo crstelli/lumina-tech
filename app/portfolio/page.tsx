@@ -1,6 +1,7 @@
 import { Button } from "@/components/Button";
 import { Navbar } from "@/components/navbar/Navbar";
 import { Container } from "@/components/section/Container";
+import { Paragraph } from "@/components/section/Paragraph";
 import { Title } from "@/components/section/Title";
 import { Card } from "@/components/works/Card";
 import Link from "next/link";
@@ -61,18 +62,26 @@ export default function page() {
       <Navbar active="Portfolio" />
       <Container>
         <Title>Portfolio</Title>
-        <p className="w-[70%] text-center mt-6 italic">
+        <Paragraph classes="mt-6">
           Una selezione dei progetti che abbiamo realizzato per aziende e
           privati. Dalla consulenza alla progettazione, ogni soluzione è pensata
           per massimizzare efficienza, estetica e tecnologia.
-        </p>
+        </Paragraph>
 
         <div className="mt-10 flex flex-col gap-12 w-[90%]">
           {projects.map((pr, i) => (
             <Card project={pr} invert={i % 2 === 1} key={i} />
           ))}
         </div>
-        <Link className="mx-auto mt-30" href="/testimonials">
+
+        <Paragraph classes="mt-20">
+          Ogni progetto rappresenta un passo verso un&apos;illuminazione più
+          efficiente, moderna e sostenibile. Continuiamo a sperimentare,
+          migliorare e costruire soluzioni che uniscono tecnologia e design per
+          offrire risultati concreti e duraturi ai nostri clienti.
+        </Paragraph>
+
+        <Link className="mx-auto mt-20" href="/testimonials">
           <Button>Cosa dicono di noi &rarr;</Button>
         </Link>
       </Container>
