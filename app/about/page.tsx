@@ -1,5 +1,7 @@
 import { Button } from "@/components/Button";
 import { Navbar } from "@/components/navbar/Navbar";
+import { Container } from "@/components/section/Container";
+import { Title } from "@/components/section/Title";
 import { Quote } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,8 +10,8 @@ export default function page() {
   return (
     <>
       <Navbar active="About" />
-      <main className="flex flex-col items-center mt-15">
-        <h2 className="text-4xl uppercase font-bold">About us</h2>
+      <Container>
+        <Title>About us</Title>
 
         <div className="grid grid-cols-2 gap-x-20 items-center mt-20">
           <div className="w-full aspect-3/2 relative rounded-md overflow-hidden">
@@ -113,7 +115,7 @@ export default function page() {
         <Link href="/portfolio" className="mt-25">
           <Button>I nostri progetti &rarr;</Button>
         </Link>
-      </main>
+      </Container>
     </>
   );
 }

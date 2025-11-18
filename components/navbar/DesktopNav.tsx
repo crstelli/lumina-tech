@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { TextLogo } from "../TextLogo";
 import { Item } from "./Item";
 
@@ -8,8 +9,10 @@ interface Props {
 function DesktopNav({ active }: Props) {
   return (
     <nav className="px-4 py-2 hidden lg:flex rounded-md items-center mt-15 mx-auto justify-between">
-      <TextLogo />
-      <ul className="flex gap-4 text-gray-medium">
+      <Link href="/">
+        <TextLogo />
+      </Link>
+      <ul className="flex gap-4 text-gray-500">
         <Item customRef="/" active={active === "Home"}>
           Home
         </Item>

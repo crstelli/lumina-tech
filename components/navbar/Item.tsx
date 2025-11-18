@@ -12,8 +12,8 @@ function Item({ children, active, customRef }: Props) {
   return (
     <li>
       <Link
-        className={`uppercase font-bold cursor-pointer hover:text-gray-dark" ${
-          active && "text-primary-500"
+        className={`uppercase text-lg cursor-pointer hover:text-gray-dark" ${
+          active && "text-primary-500 font-bold"
         }`}
         href={ref}
       >
