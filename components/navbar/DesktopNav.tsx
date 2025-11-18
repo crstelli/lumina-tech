@@ -14,8 +14,8 @@ function DesktopNav({ active }: Props) {
           Home
         </Item>
         <Item active={active === "About"}>About</Item>
-        <Item active={active === "Services"}>Services</Item>
         <Item active={active === "Portfolio"}>Portfolio</Item>
+        <Item active={active === "Testimonials"}>Testimonials</Item>
         <Item active={active === "Contact"}>Contact</Item>
       </ul>
     </nav>
