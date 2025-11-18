@@ -23,9 +23,9 @@ export default function page() {
             />
           </div>
           <div>
-            <h1 className="text-4xl font-bold">
+            <h2 className="text-4xl font-bold">
               We are a <span className="text-primary-500">strong</span> team
-            </h1>
+            </h2>
             <p className="mt-10 text-lg">
               LuminaTech nasce dall&apos;idea di un team di ingegneri e designer
               con la passione per la tecnologia sostenibile. Crediamo che ogni

@@ -3,7 +3,7 @@ interface Props {
 }
 
 function Title({ children }: Props) {
-  return <h2 className="text-4xl uppercase font-bold">{children}</h2>;
+  return <h1 className="text-4xl uppercase font-bold">{children}</h1>;
 }
 
 export { Title };
