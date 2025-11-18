@@ -4,7 +4,7 @@ import { Footer } from "@/components/Footer";
 import { Montserrat } from "next/font/google";
 
 const montserrat = Montserrat({
-  weight: ["400"],
+  weight: ["400", "700", "900"],
   subsets: ["latin"],
 });
 

@@ -48,6 +48,66 @@ export default function page() {
             - Hellen Keller
           </span>
         </p>
+
+        <h3 className="mt-40 text-4xl">
+          Faces of{" "}
+          <span className="bg-linear-to-l text-transparent bg-clip-text font-black from-primary-500 to-orange-500">
+            innovation
+          </span>
+        </h3>
+        <div className="mt-20 flex gap-30">
+          <div className="flex flex-col gap-2 shadow-lg border border-gray-300 rounded-md">
+            <div className="relative w-[250px] aspect-4/5">
+              <Image
+                src="/person-1.jpg"
+                alt="Person of our team"
+                className="object-cover object-center"
+                fill
+              />
+            </div>
+            <div className="p-4 grid grid-cols-2 items-center gap-y-2">
+              <h4 className="font-bold text-2xl col-span-2">Josh Armen</h4>
+              <span className="text-gray-500 text-xl">CEO</span>
+              <span className="justify-self-end text-gray-500">
+                - Since 2019
+              </span>
+            </div>
+          </div>
+          <div className="flex flex-col gap-2 shadow-lg border border-gray-300 rounded-md">
+            <div className="relative w-[250px] aspect-4/5">
+              <Image
+                src="/person-1.jpg"
+                alt="Person of our team"
+                className="object-cover object-center"
+                fill
+              />
+            </div>
+            <div className="p-4 grid grid-cols-2 items-center gap-y-2">
+              <h4 className="font-bold text-2xl col-span-2">Lucy Keller</h4>
+              <span className="text-gray-500 text-xl">Architect</span>
+              <span className="justify-self-end text-gray-500">
+                - Since 2021
+              </span>
+            </div>
+          </div>
+          <div className="flex flex-col gap-2 shadow-lg border border-gray-300 rounded-md">
+            <div className="relative w-[250px] aspect-4/5">
+              <Image
+                src="/person-1.jpg"
+                alt="Person of our team"
+                className="object-cover object-center"
+                fill
+              />
+            </div>
+            <div className="p-4 grid grid-cols-2 items-center gap-y-2">
+              <h4 className="font-bold text-2xl col-span-2">Carl Monternat</h4>
+              <span className="text-gray-500 text-xl">Manager</span>
+              <span className="justify-self-end text-gray-500">
+                - Since 2020
+              </span>
+            </div>
+          </div>
+        </div>
       </main>
     </>
   );
