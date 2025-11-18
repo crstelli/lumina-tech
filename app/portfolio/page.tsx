@@ -2,7 +2,58 @@ import { Button } from "@/components/Button";
 import { Navbar } from "@/components/navbar/Navbar";
 import { Container } from "@/components/section/Container";
 import { Title } from "@/components/section/Title";
-import Image from "next/image";
+import { Card } from "@/components/works/Card";
+import Link from "next/link";
+
+const projects = [
+  {
+    title: "TechCorp Headquarters",
+    description:
+      "Installazione completa di sistemi di illuminazione smart per uffici open-space, sale riunioni e aree comuni. Controllo centralizzato via app e sensori di presenza.",
+    tag: "Office",
+    image: "project-1.jpg",
+  },
+
+  {
+    title: "Casa Moderna",
+    description:
+      "Integrazione di lampadine intelligenti, luci a striscia LED e automazioni per illuminazione notturna e scenari personalizzati.",
+    tag: "Residence",
+    image: "project-2.jpg",
+  },
+
+  {
+    title: "Showroom Verde",
+    description:
+      "Design sostenibile con luci LED a basso consumo, regolabili in intensità e colore per valorizzare prodotti e spazi.",
+    tag: "Activity",
+    image: "project-3.jpg",
+  },
+
+  {
+    title: "Ristorante Lumière",
+    description:
+      "Sistema di illuminazione dinamica che cambia colore e intensità per creare atmosfere diverse durante il giorno e la sera.",
+    tag: "Activity",
+    image: "project-4.jpg",
+  },
+
+  {
+    title: "Fabbrica SmartLight",
+    description:
+      "Upgrade dell'illuminazione industriale con LED intelligenti e sensori di movimento per ottimizzare consumi e sicurezza dei lavoratori.",
+    tag: "Business",
+    image: "project-5.jpg",
+  },
+
+  {
+    title: "Hotel Aurora",
+    description:
+      "Sistema di gestione luci per camere e hall, integrato con app per personalizzare l’esperienza degli ospiti e ridurre sprechi energetici.",
+    tag: "Activity",
+    image: "project-6.jpg",
+  },
+];
 
 export default function page() {
   return (
@@ -16,32 +67,14 @@ export default function page() {
           per massimizzare efficienza, estetica e tecnologia.
         </p>
 
-        <div className="mt-10">
-          <div className="grid grid-cols-2 w-[850px] justify-between">
-            <div className="relative aspect-5/3 w-[400px]">
-              <Image
-                src="/project-1.jpg"
-                className="object-center object-cover rounded-md"
-                alt="Image of our work"
-                fill
-              />
-            </div>
-            <div className="flex flex-col">
-              <h3 className="font-bold text-2xl">TechCorp Headquarters</h3>
-              <span className="bg-green-300 mt-1 self-start uppercase font-bold px-2 py-1 rounded-full">
-                OFFICE
-              </span>
-              <p className="text-sm my-auto">
-                Installazione completa di sistemi di illuminazione smart per
-                uffici open-space, sale riunioni e aree comuni. Controllo
-                centralizzato via app e sensori di presenza.
-              </p>
-              <Button variant="secondary" size="sm" className="mt-auto">
-                Maggiori Informazioni &rarr;
-              </Button>
-            </div>
-          </div>
+        <div className="mt-10 flex flex-col gap-12 w-[90%]">
+          {projects.map((pr, i) => (
+            <Card project={pr} invert={i % 2 === 1} key={i} />
+          ))}
         </div>
+        <Link className="mx-auto mt-30" href="/testimonials">
+          <Button>Cosa dicono di noi &rarr;</Button>
+        </Link>
       </Container>
     </>
   );
