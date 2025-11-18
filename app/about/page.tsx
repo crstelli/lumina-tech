@@ -1,6 +1,8 @@
+import { Button } from "@/components/Button";
 import { Navbar } from "@/components/navbar/Navbar";
 import { Quote } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function page() {
   return (
@@ -76,7 +78,7 @@ export default function page() {
           <div className="flex flex-col gap-2 shadow-lg border border-gray-300 rounded-md">
             <div className="relative w-[250px] aspect-4/5">
               <Image
-                src="/person-1.jpg"
+                src="/person-2.jpg"
                 alt="Person of our team"
                 className="object-cover object-center"
                 fill
@@ -93,7 +95,7 @@ export default function page() {
           <div className="flex flex-col gap-2 shadow-lg border border-gray-300 rounded-md">
             <div className="relative w-[250px] aspect-4/5">
               <Image
-                src="/person-1.jpg"
+                src="/person-3.jpg"
                 alt="Person of our team"
                 className="object-cover object-center"
                 fill
@@ -108,6 +110,9 @@ export default function page() {
             </div>
           </div>
         </div>
+        <Link href="/portfolio" className="mt-25">
+          <Button>I nostri progetti &rarr;</Button>
+        </Link>
       </main>
     </>
   );
