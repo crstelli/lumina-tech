@@ -6,7 +6,7 @@ function DesktopNav() {
     <nav className="px-4 py-2 hidden lg:flex rounded-md items-center mt-15 mx-auto justify-between w-[90%] max-w-[1300px]">
       <TextLogo />
       <ul className="flex gap-4 text-gray-medium">
-        <Item>Home</Item>
+        <Item customRef="/">Home</Item>
         <Item>About</Item>
         <Item>Services</Item>
         <Item>Portfolio</Item>
