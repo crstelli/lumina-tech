@@ -1,10 +1,14 @@
 import { DesktopNav } from "./DesktopNav";
 import { MobileNav } from "./MobileNav";
 
-function Navbar() {
+interface Props {
+  active: string;
+}
+
+function Navbar({ active }: Props) {
   return (
     <>
-      <DesktopNav />
+      <DesktopNav active={active} />
     </>
   );
 }

@@ -1,3 +1,10 @@
+import { Navbar } from "@/components/navbar/Navbar";
+
 export default function page() {
-  return <main>Services</main>;
+  return (
+    <>
+      <Navbar active="Services" />
+      <main>Services</main>
+    </>
+  );
 }

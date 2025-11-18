@@ -1,3 +1,10 @@
+import { Navbar } from "@/components/navbar/Navbar";
+
 export default function page() {
-  return <main>Portfolio</main>;
+  return (
+    <>
+      <Navbar active="Portfolio" />
+      <main>Portfolio</main>
+    </>
+  );
 }

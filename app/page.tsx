@@ -1,3 +1,4 @@
+import { Navbar } from "@/components/navbar/Navbar";
 import { Statistics } from "@/components/statistics/Statistics";
 
 import Image from "next/image";
@@ -6,6 +7,7 @@ import Link from "next/link";
 export default function page() {
   return (
     <>
+      <Navbar active="Home" />
       <main className="w-[95%] max-w-[1300px] mx-auto flex flex-col gap-20 mt-15 bg-radial from-primary-500 to-60% to-white">
         <h1 className="text-center text-7xl text-black font-bold mt-20">
           Illuminiamo il futuro,
