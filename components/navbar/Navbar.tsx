@@ -9,6 +9,7 @@ function Navbar({ active }: Props) {
   return (
     <>
       <DesktopNav active={active} />
+      <MobileNav />
     </>
   );
 }

@@ -16,7 +16,9 @@ export default function RootLayout({ children }: Props) {
   return (
     <html lang="en" className={montserrat.className}>
       <body className="grid grid-rows-[1fr_auto] text-gray-dark">
-        <div className="min-h-screen">{children}</div>
+        <div className="min-h-screen w-[95%] max-w-[1300px] mx-auto">
+          {children}
+        </div>
         <Footer />
       </body>
     </html>
