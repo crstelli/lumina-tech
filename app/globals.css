@@ -6,3 +6,15 @@
   --color-gray-dark: #212529;
   --color-gray-medium: #adb5bd;
 }
+
+.embla {
+  @apply overflow-hidden;
+}
+
+.embla__container {
+  @apply flex;
+}
+
+.embla__slide {
+  @apply min-w-0 basis-full flex-none;
+}
