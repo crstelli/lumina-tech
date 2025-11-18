@@ -1,5 +1,4 @@
 import { Button } from "@/components/Button";
-import { Navbar } from "@/components/navbar/Navbar";
 import { Container } from "@/components/section/Container";
 import { Title } from "@/components/section/Title";
 import { Quote } from "lucide-react";
@@ -9,7 +8,6 @@ import Link from "next/link";
 export default function page() {
   return (
     <>
-      <Navbar active="About" />
       <Container>
         <Title>About us</Title>
 

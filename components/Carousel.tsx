@@ -43,7 +43,7 @@ const testimonials = [
 
 function Carousel() {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [
-    AutoScroll({ speed: 1, stopOnInteraction: false, startDelay: 0 }),
+    AutoScroll({ speed: 1, stopOnInteraction: false, startDelay: 500 }),
   ]);
 
   return (

@@ -1,13 +1,18 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 interface Props {
   children: string;
-  active: boolean;
   customRef?: string;
 }
 
-function Item({ children, active, customRef }: Props) {
-  const ref = customRef || children.toLowerCase();
+function Item({ children, customRef }: Props) {
+  const pathname = usePathname();
+  const ref = customRef || `/${children.toLowerCase()}`;
+
+  const active = ref === `${pathname}`;
 
   return (
     <li>

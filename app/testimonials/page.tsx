@@ -1,6 +1,5 @@
 import { Button } from "@/components/Button";
 import { Carousel } from "@/components/Carousel";
-import { Navbar } from "@/components/navbar/Navbar";
 import { Container } from "@/components/section/Container";
 import { Paragraph } from "@/components/section/Paragraph";
 import { Title } from "@/components/section/Title";
@@ -9,7 +8,6 @@ import Link from "next/link";
 export default function page() {
   return (
     <>
-      <Navbar active="Testimonials" />
       <Container>
         <Title>Testimonials</Title>
         <Paragraph classes="mt-6">

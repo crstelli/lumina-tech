@@ -1,5 +1,4 @@
 import { Button } from "@/components/Button";
-import { Navbar } from "@/components/navbar/Navbar";
 import { Container } from "@/components/section/Container";
 import { Paragraph } from "@/components/section/Paragraph";
 import { Title } from "@/components/section/Title";
@@ -59,7 +58,6 @@ const projects = [
 export default function page() {
   return (
     <>
-      <Navbar active="Portfolio" />
       <Container>
         <Title>Portfolio</Title>
         <Paragraph classes="mt-6">
