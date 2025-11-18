@@ -14,11 +14,11 @@ interface Props {
 function Card({ project, invert = false }: Props) {
   return (
     <div
-      className={`grid gap-10 w-[800px] rounded-md border border-gray-200 shadow-lg p-4 ${
-        invert ? "self-end grid-cols-[2fr_3fr]" : "grid-cols-[3fr_2fr]"
+      className={`grid gap-10 grid-cols-1 md:grid-cols-2 max-w-[800px] rounded-md border border-gray-200 shadow-lg p-4 ${
+        invert ? "lg:self-end lg:grid-cols-[2fr_3fr]" : "lg:grid-cols-[3fr_2fr]"
       }`}
     >
-      <div className={`relative aspect-5/3 ${invert && "order-2"}`}>
+      <div className={`relative aspect-5/3 ${invert && "md:order-2"}`}>
         <Image
           src={`/${project.image}`}
           className="object-center object-cover rounded-md"

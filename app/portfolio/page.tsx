@@ -66,7 +66,7 @@ export default function page() {
           per massimizzare efficienza, estetica e tecnologia.
         </Paragraph>
 
-        <div className="mt-10 flex flex-col gap-12 w-[90%]">
+        <div className="mt-10 max-lg:items-center flex flex-col gap-12 w-[90%]">
           {projects.map((pr, i) => (
             <Card project={pr} invert={i % 2 === 1} key={i} />
           ))}
