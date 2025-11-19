@@ -8,7 +8,7 @@ function DesktopNav() {
       <Link href="/">
         <TextLogo />
       </Link>
-      <ul className="flex gap-4 text-gray-500">
+      <ul className="flex gap-4 text-lg text-gray-500">
         <Item customRef="/">Home</Item>
         <Item>About</Item>
         <Item>Portfolio</Item>
