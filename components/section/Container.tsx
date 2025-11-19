@@ -3,7 +3,9 @@ interface Props {
 }
 
 function Container({ children }: Props) {
-  return <main className="flex flex-col items-center mt-15">{children}</main>;
+  return (
+    <main className="flex flex-col items-center mt-15 px-4">{children}</main>
+  );
 }
 
 export { Container };

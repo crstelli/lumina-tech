@@ -51,7 +51,7 @@ export default function page() {
           </span>
         </p>
 
-        <h3 className="mt-40 text-4xl">
+        <h3 className="mt-40 text-4xl text-center">
           Faces of{" "}
           <span className="bg-linear-to-l text-transparent bg-clip-text font-black from-primary-500 to-orange-500">
             innovation
