@@ -47,7 +47,7 @@ function Carousel() {
   ]);
 
   return (
-    <div className="embla w-[700px] mt-20" ref={emblaRef}>
+    <div className="embla max-w-[700px] w-full mt-20" ref={emblaRef}>
       <div className="embla__container">
         {testimonials.map((test) => (
           <div className="embla__slide" key={test.name}>

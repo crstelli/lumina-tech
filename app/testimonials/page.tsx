@@ -24,13 +24,13 @@ export default function page() {
         <h3 className="mt-30 font-bold text-3xl bg-clip-text bg-linear-to-r from-orange-500 to-primary-500 text-transparent">
           Ci sei quasi!
         </h3>
-        <div className="mt-10 grid grid-cols-3 gap-10 relative">
+        <div className="mt-10 min-[570px]:text-lg grid text-center grid-cols-3 gap-10 relative">
           <div className="w-full h-1 bg-linear-to-r from-green-500 to-primary-500 absolute top-6"></div>
           <div className="flex flex-col items-center">
             <span className="bg-green-200 z-1 p-2 rounded-full">
               <Check className="text-green-500 size-10" />
             </span>
-            <h5 className="mt-4 font-bold text-lg text-green-400">
+            <h5 className="mt-4 font-bold text-green-400">
               Scopri la nostra azienda
             </h5>
           </div>
@@ -40,7 +40,7 @@ export default function page() {
                 2
               </span>
             </span>
-            <h5 className="mt-4 font-bold text-lg">Contattaci ora</h5>
+            <h5 className="mt-4 font-bold">Contattaci ora</h5>
           </div>
           <div className="flex flex-col items-center">
             <span className="bg-gray-200 z-1 p-2 rounded-full">
@@ -48,9 +48,7 @@ export default function page() {
                 3
               </span>
             </span>
-            <h5 className="mt-4 text-gray-500 text-lg">
-              Diventa nostro cliente
-            </h5>
+            <h5 className="mt-4 text-gray-500">Diventa nostro cliente</h5>
           </div>
         </div>
         <Link className="mt-20" href="/contact">

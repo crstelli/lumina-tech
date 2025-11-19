@@ -11,7 +11,7 @@ interface Props {
 
 function Card({ testimonial }: Props) {
   return (
-    <div className="grid grid-cols-[auto_1fr_auto] border border-gray-300 rounded-md shadow-xs p-4 items-center gap-x-4 gap-y-1">
+    <div className="flex flex-col text-center min-[650px]:text-left min-[650px]:grid grid-cols-[auto_1fr_auto] border border-gray-300 rounded-md shadow-xs p-4 items-center gap-x-4 gap-y-1">
       <div className="size-10 relative">
         <Image
           src={`/testimonials/${testimonial.avatar}`}
@@ -20,9 +20,11 @@ function Card({ testimonial }: Props) {
           fill
         />
       </div>
-      <h4 className="font-bold text-lg">{testimonial.name}</h4>
+      <h4 className="font-bold min-[650px]:text-lg">{testimonial.name}</h4>
       <Rating />
-      <p className="col-start-2 col-span-2 italic">{testimonial.content}</p>
+      <p className="col-start-2 max-[650px]:mt-4 col-span-2 text-sm min-[650px]:text-md italic">
+        {testimonial.content}
+      </p>
     </div>
   );
 }

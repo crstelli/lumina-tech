@@ -12,9 +12,9 @@
 }
 
 .embla__container {
-  @apply flex w-[500px];
+  @apply flex max-w-[300px] min-[650px]:max-w-[500px] w-full;
 }
 
 .embla__slide {
-  @apply min-w-0 basis-full flex-none mr-10;
+  @apply min-w-0 basis-full flex-none mr-4 min-[650px]:mr-10 max-[650px]:max-w-[300px];
 }
