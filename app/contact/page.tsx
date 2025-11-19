@@ -16,7 +16,7 @@ export default function page() {
         pronto a rispondere in modo rapido e diretto.
       </Paragraph>
 
-      <form className="mt-20 px-4 py-6 rounded-md shadow-[0_1px_20px_rgba(0,0,0,0.15)] flex flex-col sm:grid grid-cols-2 w-[90%] gap-y-3 sm:gap-y-6 gap-x-4 max-w-[700px]">
+      <form className="mt-20 p-10 rounded-md shadow-[0_1px_20px_rgba(0,0,0,0.15)] flex flex-col sm:grid grid-cols-2 w-[90%] gap-y-3 sm:gap-y-6 gap-x-4 max-w-[700px]">
         <h2 className="sm:col-span-2 mb-10 text-center text-2xl font-bold">
           Non perdere altro tempo, scrivici!
         </h2>
@@ -59,7 +59,7 @@ export default function page() {
         </div>
       </div>
 
-      <div className="max-w-[800px] mt-40 border border-gray-200 rounded-md overflow-hidden w-full aspect-square sm:aspect-video">
+      <div className="max-w-[800px] shadow-[0_1px_20px_rgba(0,0,0,0.15)] mt-40 border border-gray-200 rounded-md overflow-hidden w-full aspect-square sm:aspect-video">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.194344586345!2d9.220513076823401!3d45.486031031981014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c6e501994ef9%3A0x319d3add3f65262a!2sVia%20Nicola%20Antonio%20Porpora%2C%2056-62%2C%2020131%20Milano%20MI!5e0!3m2!1sen!2sit!4v1763489112078!5m2!1sen!2sit"
           className="border-0 w-full h-full"

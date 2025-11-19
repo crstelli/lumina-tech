@@ -28,7 +28,7 @@ function Card({ project, invert = false }: Props) {
           fill
         />
       </div>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col max-[950px]:gap-2">
         <h3 className="font-bold text-2xl min-[950px]:text-nowrap">
           {project.title}
         </h3>
