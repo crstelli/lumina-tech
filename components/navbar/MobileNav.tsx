@@ -16,13 +16,13 @@ function MobileNav() {
         <X
           onClick={handleClose}
           size={45}
-          className="absolute text-black top-6 left-8 z-2 lg:hidden"
+          className="absolute top-5 sm:left-8 z-2 lg:hidden"
         />
       ) : (
         <Menu
           onClick={handleOpen}
           size={45}
-          className="absolute text-black top-6 left-8 lg:hidden"
+          className="absolute top-5 sm:left-8 lg:hidden"
         />
       )}
 
